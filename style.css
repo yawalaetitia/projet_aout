@@ -3,22 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* nav{
-    display: flex;
-    justify-content: space-between;
-    background-color: #EA9595;
-    height: 50px;
-    width: 100%;
-}
-.logo img{
-    width: 40px;
-}
-.lien ul{
-    display: flex;
-    width: 100%;
-    max-width: 800px;
-    justify-content: space-between;
-} */
 nav{
     background-color: #EA9595;
     height: 50px;
@@ -101,8 +85,9 @@ nav{
     
 }
 .image img {
-    margin-top: 30px;
-    height: 500px;
-    width: 500px;
-    justify-content: space-between;
+    margin-top: 50px;
+    height: 200px;
+    width: 200px;
+    padding:  10px;
+    margin-left: -10px ;
 }
