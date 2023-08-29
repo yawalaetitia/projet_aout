@@ -3,6 +3,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body{
+    overflow: hidden;
+ }
 .couvert2{
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.771);
@@ -10,6 +13,7 @@
     position: absolute;
     backdrop-filter: blur(5px);
     z-index: 11;
+    margin-top: -10px;
 } 
 .cadre{
     height: 400px;
