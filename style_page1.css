@@ -32,11 +32,7 @@
     align-items: center;
     list-style: none;
 }
-.entete li a{
-    text-decoration: none;
-    margin: 5px;
-    color: rgb(248, 124, 145);
-}
+
 .slide{
     width: 100%;
     margin: 1px auto;
@@ -87,7 +83,7 @@
 }
 .page{
     display: grid;
-    grid-template-columns: 78% 17%;
+    grid-template-columns: 70% 25%;
     grid-gap: 2%;
     width: 90%;
     margin: 5px auto;
@@ -106,16 +102,16 @@
     position: relative;
     padding: 15px;
 }
-.page h2{
-    font-size: 24px;
-    font-weight: bolder;
-}
+
 .page li a{
     text-decoration: none;
     color: rgb(244, 134, 152);
+    font-size: 20px;
+    letter-spacing: 3px;
 }
 .page li {
     list-style: none;
+    padding: 4px;
 }
 @keyframes myAnime {
 	0% {
