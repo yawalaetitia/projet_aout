@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    background-color:white;
+    height: 50px;
+    width: 100%;
+}
+.logo{
+    position: relative;
+    
+    
+}
+.logo a img{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+.sild img{
+    height:600px;
+    width:100%;
+}
+img{
+    height:200px;
+    width:200px;
+}
+.lecture{
+    display: flex;
+    margin: 10px;
+}
+.d{
+    margin: 10px;
+}
+.P{
+    display: flex;
+    gap: 200px;
+    margin-top:35px;
+   margin-left: 40px;
+
+}
