@@ -1,7 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  background-color: #f1f0f9;
 }
 .entete{
     height: 56px;
@@ -38,33 +46,23 @@
     color: rgb(248, 124, 145);
 }
 .slide{
+    position: relative;
     width: 100%;
-    margin: 1px auto;
-    height: 260px;
-    background: url(./images/sli4.jpg) 50%;
+    margin: auto;
+    height: 860px;
+    background: url(./images/image1.jpg) 50%;
     background-size: cover;
     overflow: hidden;
 }
 .slide h1{
-    position: relative;
-    font-size: 24px;
-    text-transform: uppercase;
-    color: rgb(244, 134, 152);
-    z-index: 10;
-    text-align: center;
-    height: 260px;
-    width: 90%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
-
-}
-.slide .couvert{
-    background-color: rgba(0, 0, 0, 0.523);
-    width: 100%;
-    height: 260px;
     position: absolute;
-    z-index: 5;
+    font-size: 51px;
+    font-size: 51px;
+    text-transform: uppercase;
+    color: #ffffff;
+    top: 40%;
+    left: 30%;
+
 }
 .slide img{
     width: 100%;
@@ -80,43 +78,56 @@
     animation: myAnime2 8s ease 0s infinite normal forwards;
 
 }
-.page .gauche img{
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
-}
-.page{
-    display: grid;
-    grid-template-columns: 78% 17%;
-    grid-gap: 2%;
-    width: 90%;
-    margin: 5px auto;
 
+
+.container{
+    width: 100%;
+    max-width: 1800px;
+    display: flex;
+    justify-content: center;
 }
-.page .gauche{
+
+
+section {
+    width: 100%;
+    margin: 2rem auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 150px);
-    width: 90%;
-    margin: 5px auto;
-    justify-content: space-between;
-    grid-gap: 1%;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
 }
-.page .droit{
-    text-align: center;
+section h2{
+    color:#EA9595 ;
+}
+  
+.card {
+    width: 100%;
+    cursor: default;
+    padding: 1.25rem;
+    border-radius: 0.25rem;
+    background-color: var(--sdcolor);
+    transition: transform 0.3s ease-in-out;
+}
+  
+.card:hover {
+    transform: translateY(-0.5rem);
+}
+  
+.card-img {
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
     position: relative;
-    padding: 15px;
+    border-radius: 0.25rem;
 }
-.page h2{
-    font-size: 24px;
-    font-weight: bolder;
+  
+.card-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
 }
-.page li a{
-    text-decoration: none;
-    color: rgb(244, 134, 152);
-}
-.page li {
-    list-style: none;
-}
+
 @keyframes myAnime {
 	0% {
 		opacity: 0;
@@ -139,4 +150,37 @@
 		transform: translateY(-570px);
 	}
 }
-
+.foot{
+    background-color: black;
+    height: 300px;
+    width:100%;
+    display: flex;
+    gap: 100px; 
+    justify-content: center;
+    
+}
+.lien {
+    margin-top: 40px;
+   
+}
+.lien h4{
+    margin-top: 20px;
+    margin-bottom: 14px;
+}
+.cat{
+    margin-top: 40px;
+}   
+.cat h4{
+    margin-top: 20px;
+    margin-bottom: 14px;
+   
+}
+.contact{
+    margin-top: 40px;
+    
+}
+.contact h4{
+   margin-top: 20px;
+    margin-bottom: 14px;
+    
+}
