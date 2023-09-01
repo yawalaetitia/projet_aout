@@ -42,40 +42,58 @@
     font-size: 20px;
 }
 
-.slide{
-    position: relative;
-    width: 100%;
+section .titre{
+    position: absolute;
+    z-index: 100;
+    top: 45%;
+    font-size: 55px;
+    color: #ffffff;
+    left: 30%;
+    text-transform: uppercase;
+}
+
+
+.slider-1 {
+    width: 2050px;
     margin: auto;
     height: 860px;
-    background: url(./images/image1.jpg) 50%;
-    background-size: cover;
     overflow: hidden;
-}
-.slide h1{
-    position: absolute;
-    font-size: 51px;
-    font-size: 51px;
-    text-transform: uppercase;
-    color: #ffffff;
-    top: 40%;
-    left: 30%;
-
+  
 }
 
-.slide img{
+  .slider-1 .slider {
+    display: flex;
+    animation: slider-1 10s infinite ease-in-out;
+  
+  }
+  .slider-1 .slider img{
+    height: 100%;
     width: 100%;
+    object-fit: cover;
 
 }
-.slide .t1{
-    animation: myAnime 11s ease 0s infinite normal forwards;
-   height: 280px;
-
-
-}
-.slide .t2{
-    animation: myAnime2 8s ease 0s infinite normal forwards;
-
-}
+  
+  @keyframes slider-1 {
+    0%,
+    20% {
+      transform: translateX(0);
+    }
+    25%,
+    45% {
+      transform: translateX(-100%);
+    }
+    50%,
+    70% {
+      transform: translateX(-200%);
+    }
+    75%,
+    95% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(-400%);
+    }
+  } 
 
 
 .container{
@@ -119,8 +137,8 @@ section h2{
 }
   
 .card-img img {
-    width: 100%;
-    height: 100%;
+    width: 240px;
+    height: 240px;
     display: block;
     object-fit: cover;
     object-position: center;

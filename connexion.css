@@ -31,6 +31,7 @@ body{
     font-size: 25px;
     padding: 15px;
     margin-top: 35px;
+    color:black;
 }
 .cadre2 input {
     border: none;
@@ -56,7 +57,7 @@ body{
     display: flex;
 }
 .cadre2 .para1{
-    font-size: 20px;
+    font-size: 11px;
     color: black;
 }
 .cadre2 form{
@@ -78,16 +79,12 @@ body{
     height: 30px;
     border-radius: 23px;
     border: none;
-<<<<<<< HEAD
     border-radius: 23px;
     width: 30%;
-    margin-left: 35%;
-    margin-top: 40px;
-=======
+    margin-top: 20px;
 }
 .cadre2 button a{
     color: black;
->>>>>>> 40fda46e8e103f1e571e28c14e883e66e54676e6
 }
 
 
