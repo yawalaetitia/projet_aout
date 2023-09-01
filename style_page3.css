@@ -1,15 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-html,
-body {
-  width: 100%;
-  font-family: "Poppins", sans-serif;
-  color: #ffffff;
-  background-color: #f1f0f9;
 }
 .entete{
     height: 56px;
@@ -40,10 +32,14 @@ body {
     align-items: center;
     list-style: none;
 }
-.entete li a{
+.menu{
+    margin-right: 50px;
+    
+}
+.menu a{
     text-decoration: none;
-    margin: 5px;
-    color: rgb(248, 124, 145);
+    color: rgb(226, 136, 151);
+    font-size: 20px;
 }
 .slide{
     position: relative;
@@ -64,6 +60,7 @@ body {
     left: 30%;
 
 }
+
 .slide img{
     width: 100%;
 
@@ -78,56 +75,78 @@ body {
     animation: myAnime2 8s ease 0s infinite normal forwards;
 
 }
+.page .gauche img{
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+}
+.page{
+    display: grid;
+    grid-template-columns: 15% 60% 15%;
+    grid-gap: 2%;
+    width: 90%;
+    margin: 5px auto;
+    justify-items: center;
 
+}
+.page .gauche ul .span{
+    font-size: 24px;
+    font-weight: bolder;
+    color: pink;
+}
+.page .gauche ul li a.music{
+    letter-spacing: 0px;
+    color: black;
+}
+.page .center{
+    
+    justify-content: space-between;
+    width: 70%;
+    align-items: stretch;
+    margin: 1px auto;
 
-.container{
-    width: 100%;
-    max-width: 1800px;
+}
+.page .center ul{
     display: flex;
     justify-content: center;
 }
-
-
-section {
-    width: 100%;
-    margin: 2rem auto;
-    display: grid;
-    gap: 0.75rem;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+.page .center ul li {
+    list-style: none;
+    padding: 14px;
 }
-section h2{
-    color:#EA9595 ;
+.page .center ul a.audio {
+    color: rgb(222, 207, 207);
 }
-  
-.card {
-    width: 100%;
-    cursor: default;
-    padding: 1.25rem;
-    border-radius: 0.25rem;
-    background-color: var(--sdcolor);
-    transition: transform 0.3s ease-in-out;
-}
-  
-.card:hover {
-    transform: translateY(-0.5rem);
-}
-  
-.card-img {
-    width: 100%;
-    height: 15rem;
-    overflow: hidden;
+.page .center audio{
+    width: 80%;
+    margin: 2px auto;
     position: relative;
-    border-radius: 0.25rem;
-}
-  
-.card-img img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    object-position: center;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -30%);
 }
 
+/* audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-play-button{
+background-color: #f50a0a;
+color: #704242;
+} */
+.page .droit{
+    text-align: center;
+    position: relative;
+    padding: 15px;
+}
+
+.page li a{
+    text-decoration: none;
+    color: rgb(244, 134, 152);
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.page li {
+    list-style: none;
+    padding: 4px;
+}
 @keyframes myAnime {
 	0% {
 		opacity: 0;
@@ -184,3 +203,4 @@ section h2{
     margin-bottom: 14px;
     
 }
+

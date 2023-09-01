@@ -1,85 +1,93 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 body{
-    background-color: black;
+   overflow: hidden;
+}
+.couvert2{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.771);
     width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.cadre{
-    height: 500px;
-    width: 500px;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    z-index: 11;
+    margin-top: -10px;
+} 
+.cadre2{
+    height: 300px;
+    width: 350px;
     background-color: #EA9595;
-    border-radius: 80px;
+    border-radius: 39px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 15;
 }
-.para{
-    margin-top: 40px;
-    margin-left: 13.90%;
-    padding:10px;
-    font-size: 20px;
-    color: black;
+.cadre2 h1 {
+    font-size: 25px;
+    padding: 15px;
+    margin-top: 35px;
 }
-.para1{
-    margin-left: 35%;
-    font-size: 20px;
-    color: black;
-}
-.formulaire{
-   margin: 30px;
- 
-}
-form{
-    margin: 0 auto;
-    width: 300px;
-}
-input{
+.cadre2 input {
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    padding: 15px;
     height: 25px;
     width:250px;
     margin-bottom: 10px;
 }
-.genre{
+.cadre2 .radio  {
+    display: grid;
+    margin: 10px auto;
+    width: 90%;
+    grid-template-columns: 45% 45%;
+    grid-gap: 2%;
+}
+.cadre2 .radio p{
+    grid-column: span 2;
+    margin-bottom: 8px;
+}
+.cadre2 .radio .div1, .cadre2 .radio .div2{
     display: flex;
-    padding: 20px;
-    margin-right: 50px;
 }
-.p1{
-    background-color: white;
-    border: none;
-    border-radius: 23px;
-    width: 30%;
-    margin-left: 35%;
-    
+.cadre2 .para1{
+    font-size: 20px;
+    color: black;
 }
-.p p{
-    text-align: center;
-    margin: 7px;
+.cadre2 form{
+    margin: 0 auto;
+    width: 300px;
 }
-.para2{
+.cadre2 .para2{
     display: flex;
     margin-top: 10px;
 }
-a {
+.cadre2 a {
     text-decoration: none;
     color:white;
 }
-button{
+.cadre2 button{
     background-color: white;
-    margin-top: 20px;
-    margin-left: 110px;
+    margin-bottom: 20px;
     width: 90px;
-    height:30px;
+    height: 30px;
     border-radius: 23px;
-}
-.p2{
-    background-color: white;
     border: none;
+<<<<<<< HEAD
     border-radius: 23px;
     width: 30%;
     margin-left: 35%;
     margin-top: 40px;
+=======
 }
+.cadre2 button a{
+    color: black;
+>>>>>>> 40fda46e8e103f1e571e28c14e883e66e54676e6
+}
+
 
